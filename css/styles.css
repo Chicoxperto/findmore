@@ -1,0 +1,54 @@
+*{
+    font-family: 'Cabin', sans-serif;
+}
+
+body{
+    background-color: #f3f3f3;
+}
+
+:root {
+    --1blue:#1061BF;
+  }
+h1,h2,h3,h4,h5{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 64px;
+}
+
+p{
+    font-size: 24px;
+}
+
+.branco{
+    color: white;
+}
+
+/* -----------LOGIN-------- */
+.login-esq{
+background-color: var(--1blue);
+height:100vh;
+padding: 15% 3% 0 3%;
+background-image: url('../assets/img/login-img.png');
+background-size: cover;
+}
+
+.icon-login{
+margin-right:8px
+}
+
+.group-icon-login{
+    margin-top: 200px;
+}
+
+.form-login{
+    width: 540px;
+}
+
+.submit-login{
+    width: 100%;
+    background-color: var(--1blue);
+}
+
