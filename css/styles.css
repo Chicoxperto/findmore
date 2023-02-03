@@ -1,54 +1,45 @@
-*{
+* {
     font-family: 'Cabin', sans-serif;
 }
 
-body{
+body {
     background-color: #f3f3f3;
+    color: var(--dark-blue);
 }
 
 :root {
-    --1blue:#1061BF;
-  }
-h1,h2,h3,h4,h5{
+    --1blue: #1061BF;
+    --dark-blue: #061C42;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Montserrat', sans-serif;
 }
 
-h1{
-    font-weight: bold;
-    font-size: 64px;
-}
+/* ------------LOGIN------------ */
 
-p{
-    font-size: 24px;
-}
-
-.branco{
-    color: white;
-}
-
-/* -----------LOGIN-------- */
-.login-esq{
-background-color: var(--1blue);
-height:100vh;
-padding: 15% 3% 0 3%;
-background-image: url('../assets/img/login-img.png');
-background-size: cover;
-}
-
-.icon-login{
-margin-right:8px
-}
-
-.group-icon-login{
-    margin-top: 200px;
-}
-
-.form-login{
-    width: 540px;
-}
-
-.submit-login{
-    width: 100%;
+.login-container {
     background-color: var(--1blue);
+    background-image: url(/assets/img/login-img.png);
+    background-size: cover;
+    height: 100vh;
+
+    padding-top: 50%;
+    padding-left: 6%;
+    padding-right: 6%;
+
 }
 
+.login-block {
+    height: 440px;
+    border-radius: 10px;
+    background: linear-gradient(154.35deg, rgba(255, 255, 255, 0.81) 2.6%, rgba(255, 255, 255, 0.63) 98.31%);
+}
+
+#logo-login {
+    width: 240px;
+}
