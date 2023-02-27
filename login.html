@@ -30,7 +30,7 @@
 
         <!-- login part -->
         <div class="row login">
-            <div class="col-0 col-md-0 col-lg-6 bg-left hide-mobile">
+            <div class="col-0 col-md-12 col-lg-6 bg-left hide-mobile ">
                 <h1 class="branco">Welcome to Findmore Solutions</h1>
                 <p class="branco">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -49,25 +49,36 @@
                 <div class="container-login">
                     <div class="d-flex justify-content-center align-items-center login-block">
                         <div class="text-center">
-                            <img src="assets/ico/key.svg" id="logo-request">
-                            <h2 id="request-title">Forgot Password?</h2>
-                            <p style="font-size: 16px;" id="p-request">No worries, we’ll send you reset instructions.
-                            </p>
+                            <img src="assets/ico/logo-sidemenu.svg" id="logo-login">
+
                             <form class="form-login">
 
                                 <form class="d-flex justify-content-center">
-                                    <input type="email" class="form-control" id="email-request"
+                                    <input type="email" class="form-control" id="email-login"
                                         aria-describedby="emailHelp" placeholder="Enter Email">
+                                    <input type="password" class="form-control" id="pass-login"
+                                        aria-describedby="emailHelp" placeholder="Enter Password">
+
+                                    <div class="d-flex justify-content-between" id="keep-password">
+                                        <div class="form-check">
+                                            <label class="form-check-label" for="exampleCheck1">Keep me logged
+                                                in</label>
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1" />
 
 
-
+                                        </div>
+                                        <a id="forgot-pass" href="request_password.html" class="hide-mobile">Forgot
+                                            Password?</a>
+                                    </div>
                                     <button type="button" class="btn btn-primary btn-login"
-                                        onclick="location.href='dashboard.html';">Send Reset Email</button>
-                                </form>
-                                <a id="back-login" href="login.html">&lt; Back to Login</a>
+                                        onclick="location.href='dashboard.html';">Sign In</button>
 
+                                </form>
+
+                                <a id="forgot-pass" href="request_password.html" class="hide-web">Forgot Password?</a>
                         </div>
                     </div>
+
                     <div class="d-flex align-items-center justify-content-center ">
                         <div class="container-socials hide-web">
                             <a href="https://www.facebook.com/FindmoreConsulting" target="_blank"><i

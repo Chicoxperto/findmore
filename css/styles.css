@@ -2,6 +2,7 @@
     font-family: 'Cabin', sans-serif;
 }
 
+
 body {
     background-color: #f3f3f3;
     color: var(--dark-blue);
@@ -22,45 +23,50 @@ h5 {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* ------------LOGIN------------ */
-
-.login-container {
-    background-color: var(--1blue);
-    background-image: url(/assets/img/login-img.png);
-    background-size: cover;
-    height: 100vh;
-
-    padding-top: 50%;
-    padding-left: 6%;
-    padding-right: 6%;
-
+ul li {
+    list-style-type: none;
 }
 
+ul {
+    padding: 0 !important;
+}
+
+/* ------------LOGIN------------ */
+.row .login {
+    height: 100%;
+    padding: 0;
+}
+
+.bg-right {
+    background-color: var(--1blue);
+    background-image: url(/assets/img/login-img.png);
+    height: 100vh;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .login-block {
-    height: 440px;
-    border-radius: 10px;
+
     background: linear-gradient(154.35deg, rgba(255, 255, 255, 0.81) 2.6%, rgba(255, 255, 255, 0.63) 98.31%);
+    height: 432px;
+    border-radius: 10px;
+    padding: 0 32px;
 }
 
 #logo-login {
-    width: 240px;
-    margin-bottom: 30px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
+    margin-bottom: 32px;
 }
 
-#email-login {
-    margin-bottom: 8px;
-}
+
 
 .form-check-label {
     font-size: 12px;
 }
 
 .form-check {
-    margin-top: 8px;
     margin-bottom: 20px;
 }
 
@@ -94,6 +100,10 @@ h5 {
     width: 252px;
 }
 
+#email-request {
+    margin: 0 auto;
+    margin-bottom: 8px;
+}
 
 #forgot-pass {
     margin-top: 16px;
@@ -138,10 +148,8 @@ h2 {
     font-size: 32px;
 }
 
-#email-request {
+#email-login {
     margin-bottom: 8px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 a#back-login {
@@ -173,6 +181,96 @@ a#back-login:hover::after {
     padding-left: 24px;
     padding-right: 24px;
 } */
+
+
+.side-menu-mobile {
+    background-color: #F3F3F3;
+    position: absolute !important;
+    width: 0px;
+    height: 100vh;
+    z-index: 999;
+    transition: width 0.2s;
+    overflow: hidden;
+
+}
+
+.mobile-container {
+    position: relative;
+    text-align: center;
+}
+
+.img-side-menu-mob {
+    padding-top: 72px;
+    width: 248px;
+    margin-bottom: 100px;
+
+}
+
+
+.right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 24px;
+    margin-right: 24px;
+    display: block;
+}
+
+
+.icons-menu {
+    margin-bottom: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin-bottom: 30px;
+
+}
+
+nav ul li hr {
+    margin: 0 32px;
+}
+
+nav ul li a {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    padding: 10px 0;
+    margin-left: 32px;
+    color: var(--1blue);
+
+}
+
+nav ul li a p {
+    margin: 0;
+    width: 200px;
+    text-align: left;
+    margin-left: 60px;
+    color: var(--dark-blue);
+    font-weight: 600;
+
+}
+
+nav ul li a i {
+    text-align: center;
+}
+
+
+.topbar a {
+    color: var(--1blue);
+}
+
+.active {
+    width: 320px;
+    transition: width 0.2s;
+}
 
 .profile img {
     border-radius: 20px;
@@ -253,8 +351,13 @@ button.btn-primary {
 .event-card {
     border-radius: 4px;
     margin-bottom: 16px;
+
+}
+
+.event-card-text {
     padding: 16px;
 }
+
 
 .event-card h3 {
     font-weight: 800;
@@ -349,9 +452,124 @@ button.btn-primary {
 }
 
 /* media querries */
-/* dashboard */
 
+
+/* md */
+@media (min-width: 768px) {
+    .login-block {
+        width: 500px;
+        height: 700px;
+    }
+
+    #logo-login {
+        width: 364px;
+    }
+
+    #email-login,
+    #pw-login,
+    #email-request,
+    .btn-login {
+        width: 100%;
+    }
+
+    #logo-request {
+        width: 140px;
+    }
+}
+
+
+
+
+
+/* lg */
 @media (min-width: 992px) {
+
+
+    /* Login */
+
+    #logo-login {
+        margin-bottom: 72px;
+    }
+
+    #email-login {
+        margin-bottom: 24px;
+    }
+
+    #pass-login {
+        margin-bottom: 8px;
+    }
+
+
+    .bg-left {
+        background-color: var(--1blue);
+        background-image: url(/assets/img/login-img.png);
+        padding: 15% 3% 0 3%;
+    }
+
+    .bg-left h1 {
+        font-weight: bold;
+        font-size: 64px;
+        color: white;
+    }
+
+    .bg-left p {
+        font-size: 24px;
+        color: white;
+    }
+
+    .group-icon-login {
+        margin-top: 290px;
+
+    }
+
+    .group-icon-login i {
+        color: white;
+        margin-right: 8px;
+    }
+
+    .bg-right {
+        background: none;
+    }
+
+    #email-login,
+    #pw-login,
+    #email-login,
+    #pass-login,
+    #email-request,
+    .btn-login {
+        width: 540px;
+        height: 64px;
+    }
+
+    /* request */
+
+    #logo-request {
+        width: 148px;
+    }
+
+    #p-request {
+        margin-bottom: 42px;
+    }
+
+    #email-request {
+        margin-bottom: 24px;
+    }
+
+    #forgot-pass {
+        margin-top: 0px;
+    }
+
+    #request-title {
+        font-size: 48px;
+    }
+
+    .login-block {
+        background: none;
+    }
+
+    .user-name {
+        display: inline-block !important;
+    }
 
     .hide-mobile {
         display: block;
@@ -374,7 +592,7 @@ button.btn-primary {
     }
 
     .event-card {
-        height: 189px;
+        height: 296px;
     }
 
     .promo-dash {
@@ -395,7 +613,10 @@ button.btn-primary {
         position: absolute;
         text-align: center;
         padding-top: 60px;
+        overflow: hidden;
+        transition: width 0.2s;
     }
+
 
     .open-side-menu {
         margin-top: 22px;
@@ -407,7 +628,56 @@ button.btn-primary {
         color: var(--1blue);
     }
 
-    .icons-pages i {
-        margin-bottom: 40px;
+
+    .side-menu button {
+        border: none;
+        background-color: transparent;
+    }
+
+    .side-menu-active {
+        width: 332px;
+    }
+
+
+
+
+    .logo-active {
+        max-width: 280px;
+    }
+
+    .iconrotation {
+        transform: rotate(180deg);
+
+    }
+
+    #img-sidemenu {
+        cursor: pointer;
+    }
+
+    .event-card {
+        position: relative;
+    }
+
+    #img-dinner {
+        display: inline-block;
+        width: 216px;
+        height: 100%;
+        position: absolute;
+    }
+
+    .event-card-text {
+        margin-left: 216px;
+    }
+
+    .event-card-text h3 {
+        margin-top: 8px;
+    }
+
+    .event-card-text p {
+        margin-top: 24px;
+    }
+
+    #card-date {
+        margin-top: 80px;
     }
 }
