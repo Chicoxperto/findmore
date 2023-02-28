@@ -39,7 +39,7 @@ ul {
 
 .bg-right {
     background-color: var(--1blue);
-    background-image: url(/assets/img/login-img.png);
+    background-image: url(../assets/img/login-img.png);
     height: 100vh;
     padding: 16px;
     display: flex;
@@ -53,7 +53,7 @@ ul {
     background: linear-gradient(154.35deg, rgba(255, 255, 255, 0.81) 2.6%, rgba(255, 255, 255, 0.63) 98.31%);
     height: 432px;
     border-radius: 10px;
-    padding: 0 32px;
+    width: 344px;
 }
 
 #logo-login {
@@ -415,7 +415,7 @@ button.btn-primary {
 }
 
 #promo1 {
-    background-image: url(/assets/img/promo1.png);
+    background-image: url(../assets/img/promo1.png);
     overflow: hidden;
     background-size: cover;
     position: relative;
@@ -423,13 +423,13 @@ button.btn-primary {
 }
 
 #promo2 {
-    background-image: url(/assets/img/promo2.png);
+    background-image: url(../assets/img/promo2.png);
     background-size: cover;
     position: relative;
 }
 
 #promo3 {
-    background-image: url(/assets/img/promo3.png);
+    background-image: url(../assets/img/promo3.png);
     background-size: cover;
     position: relative;
 }
@@ -451,10 +451,14 @@ button.btn-primary {
     display: block;
 }
 
+.hide-md {
+    display: block;
+}
+
 /* media querries */
 
 
-/* md */
+/* tablet */
 @media (min-width: 768px) {
     .login-block {
         width: 500px;
@@ -475,13 +479,25 @@ button.btn-primary {
     #logo-request {
         width: 140px;
     }
+
+    .hide-md {
+        display: none;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
+    .cancel-hide {
+        display: block;
+    }
 }
 
 
 
 
 
-/* lg */
+/* web */
 @media (min-width: 992px) {
 
 
@@ -489,6 +505,7 @@ button.btn-primary {
 
     #logo-login {
         margin-bottom: 72px;
+        width: 512px;
     }
 
     #email-login {
@@ -502,8 +519,11 @@ button.btn-primary {
 
     .bg-left {
         background-color: var(--1blue);
-        background-image: url(/assets/img/login-img.png);
+        background-image: url(../assets/img/login-img.png);
         padding: 15% 3% 0 3%;
+        background-size: cover;
+        background-repeat: no-repeat;
+
     }
 
     .bg-left h1 {
@@ -576,6 +596,10 @@ button.btn-primary {
     }
 
     .hide-web {
+        display: none;
+    }
+
+    .hide-md {
         display: none;
     }
 

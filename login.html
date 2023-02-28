@@ -51,31 +51,28 @@
                         <div class="text-center">
                             <img src="assets/ico/logo-sidemenu.svg" id="logo-login">
 
-                            <form class="form-login">
+                            <form class="form-login" action="dashboard.html" method="post">
+                                <input type="email" class="form-control" id="email-login" aria-describedby="emailHelp"
+                                    placeholder="Enter Email" required>
+                                <input type="password" class="form-control" id="pass-login" aria-describedby="emailHelp"
+                                    placeholder="Enter Password" required>
 
-                                <form class="d-flex justify-content-center">
-                                    <input type="email" class="form-control" id="email-login"
-                                        aria-describedby="emailHelp" placeholder="Enter Email">
-                                    <input type="password" class="form-control" id="pass-login"
-                                        aria-describedby="emailHelp" placeholder="Enter Password">
-
-                                    <div class="d-flex justify-content-between" id="keep-password">
-                                        <div class="form-check">
-                                            <label class="form-check-label" for="exampleCheck1">Keep me logged
-                                                in</label>
-                                            <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                                <div class="d-flex justify-content-between" id="keep-password">
+                                    <div class="form-check">
+                                        <label class="form-check-label" for="exampleCheck1">Keep me logged
+                                            in</label>
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
 
 
-                                        </div>
-                                        <a id="forgot-pass" href="request_password.html" class="hide-mobile">Forgot
-                                            Password?</a>
                                     </div>
-                                    <button type="button" class="btn btn-primary btn-login"
-                                        onclick="location.href='dashboard.html';">Sign In</button>
+                                    <a id="forgot-pass" href="request_password.html" class="hide-mobile">Forgot
+                                        Password?</a>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-login">Sign In</button>
 
-                                </form>
+                            </form>
 
-                                <a id="forgot-pass" href="request_password.html" class="hide-web">Forgot Password?</a>
+                            <a id="forgot-pass" href="request_password.html" class="hide-web">Forgot Password?</a>
                         </div>
                     </div>
 
